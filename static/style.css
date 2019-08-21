@@ -1,0 +1,49 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html, body {
+  font-family: 'Lexend Deca', Helvetica, sans-serif;
+  font-size: 16px;
+}
+nav > a {
+  color: #fff !important;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+nav > a:hover {
+  border: 1px solid #fff;
+}
+section h1 {
+  color: #4f1ca0;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+section h4 {
+  color: #777;
+  size: 14px;
+  font-weight: bold;
+}
+section#hero {
+  background-image: url('/static/images/hero.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 860px;
+  height: 93vh;
+}
+.text-primary {
+  color: #4f1ca0 !important;
+}
+section#schedule {
+  background-color: transparent;
+  /* font-size: 14px; */
+}
+.border-left {
+  border-color: #4f1ca0 !important;
+}

@@ -1,0 +1,48 @@
+---
+layout: 'layout'
+title: Home
+---
+<section id="hero">
+  {% include 'nav.njk' %}
+  <div class="d-flex justify-content-center mt-5">
+    <img src="/static/images/logo.svg" alt="Kiss Puppy Logo" width="280">
+  </div>
+</section>
+<section id="schedule">
+  <div class="d-flex justify-content-center h-100 text-center">
+    <div class="w-100">
+      <h1>Event Schedules</h1>
+      <h4 class="mb-4">2019</h4>
+      {% for s in schedule %}
+        <div class="row">
+          <div class="col text-uppercase pr-4">
+            <div class="d-flex align-items-center justify-content-end h-100">
+              <b class="text-primary">{{ s.date }}</b>
+            </div>
+          </div>
+          <div class="col border-left py-3 pl-4 text-left">
+            <div>
+              <b class="text-primary">{{ s.title }}</b>
+            </div>
+            <div>
+              <small class="text-primary">{{ s.production }}</small>
+            </div>
+            <div>
+              <small>{{ s.venue }}</small>
+            </div>
+            <div>
+              <small>{{ s.address }}</small>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section id="biography" class="my-5">
+  <div class="d-flex justify-content-center h-100 text-center">
+    <div class="w-100">
+      <h1>Biography</h1>
+    </div>
+  </div>
+</section>
